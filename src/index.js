@@ -11,7 +11,8 @@ client.buttons = new Collection();
 client.selectMenus = new Collection();
 client.modals = new Collection();
 client.commandArray = [];
-client.orders = new Collection();
+client.rules = new Collection();
+client.utils = new Collection();
 
 const functionFolders = fs.readdirSync("./src/functions");
 for (const folder of functionFolders) {
@@ -25,7 +26,8 @@ for (const folder of functionFolders) {
 
 client.handleEvents();
 client.handleCommands();
-client.handleOrders();
+client.handleRules();
+client.handleUtils();
 client.handleComponents();
 // the login bot here.
 client.login(token);
