@@ -1,0 +1,25 @@
+{
+  "name": "bot_setup",
+  "version": "1.0.0",
+  "description": "culda studio application",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "author": "culda",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.6.0",
+    "@discordjs/voice": "^0.15.0",
+    "chalk": "^4.1.2",
+    "discord-api-types": "^0.37.36",
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
